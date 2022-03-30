@@ -31,7 +31,7 @@ jobs:
       - name: Install Playwright
         run: npx playwright install
       - name: Run your tests
-        run: npx playwright test
+        run: npx playwright test --browser=chrome
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v2
