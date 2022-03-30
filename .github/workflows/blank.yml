@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '14'
       - name: Install Playwright
-        run: npx @playwright/test install --with-deps
+        run: npm install @playwright/test
       - name: Run your tests
         run: npx playwright test
       - name: Upload test results
