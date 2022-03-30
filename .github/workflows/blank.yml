@@ -26,8 +26,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Install Playwright
+      - name: Install Playwright test
         run: npm install @playwright/test
+      - name: Install Playwright
+        run: npx playwright install
       - name: Run your tests
         run: npx playwright test
       - name: Upload test results
